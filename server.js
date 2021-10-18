@@ -17,15 +17,15 @@ app.get("/", function(req, res) {
     {
         res.send(`Sa oled alakaalus`);
     }
-    if(result>19 && result<24.9)
+    else if(result>20 && result<24.9)
     {
         res.send(`Sa oled normaalkaalus`);
     }
-    if(result>25 && result<29,9)
+    else if(result>25 && result<29,9)
     {
         res.send(`Sa oled ülekaalus`);
     }
-    if(result > 30)
+    else if(result > 30)
     {
         res.send(`Sa oled rasvunud`);
     }
